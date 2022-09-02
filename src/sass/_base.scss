@@ -21,7 +21,10 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   color: $desaturated-blue;
-  background-color: $pale-blue;
+  background-color: $pale-blue-1;
+  background-image: url(/src/img/pattern-background-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 main {

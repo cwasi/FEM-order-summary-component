@@ -30,6 +30,11 @@
     margin-bottom: 2rem;
     line-height: 2.2rem;
     text-align: center; }
+  .summary__plan-container > a:hover {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #7280a7; }
   .summary__plan-container {
     margin-bottom: 2.5rem;
     padding: 2rem;
@@ -45,6 +50,7 @@
     color: #2d3b60; }
   .summary__btn {
     font-family: "Red Hat Display", sans-serif;
+    font-size: 1.2rem;
     font-weight: 700;
     min-width: 100%;
     border: none;
@@ -53,19 +59,25 @@
 .btn-submit {
   margin-bottom: 2.5rem;
   padding: 1.5rem 0;
-  font-size: 1.5rem;
   border-radius: 1rem;
   color: #fff;
-  background-color: #3829e0; }
+  background-color: #3829e0;
+  box-shadow: 0 2rem 2rem 0 rgba(39, 10, 170, 0.17); }
+  .btn-submit:hover {
+    background-color: #7280a7; }
 
 .btn-cancel {
-  font-size: 1.5rem;
   font-family: "Red Hat Display", sans-serif;
   color: #7280a7;
   background-color: transparent; }
+  .btn-cancel:hover {
+    color: #2d3b60; }
 
 .mr {
-  margin-right: 1rem; }
+  margin-right: 2rem; }
+
+.mb {
+  margin-bottom: 0.2rem; }
 
 .AV {
   display: flex;
@@ -93,7 +105,10 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   color: #7280a7;
-  background-color: #f5f7ff; }
+  background-color: #e0e8ff;
+  background-image: url(/src/img/pattern-background-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat; }
 
 main {
   display: flex;
