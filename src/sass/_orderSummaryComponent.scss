@@ -4,6 +4,11 @@
   display: grid;
   grid-template-columns: 40rem;
   grid-template-rows: 1fr;
+  transition: all 100ms;
+
+  @media only screen and (max-width: 26.7em) {
+    grid-template-columns: 38rem;
+  }
 
   &__img-containe {
     width: 100%;
@@ -35,6 +40,9 @@
     margin-bottom: 2rem;
     line-height: 2.2rem;
     text-align: center;
+    @media only screen and (max-width: 26.7em) {
+      line-height: 3rem;
+    }
   }
 
   &__plan-container > a {
@@ -57,19 +65,28 @@
     align-items: center;
   }
 
+  &__plan-title,
+  &__plan-duration {
+    @media only screen and (max-width: 26.7em) {
+      font-size: 1.7rem;
+    }
+  }
+
   &__plan-title {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 900;
     color: #2d3b60;
   }
 
   &__btn {
     font-family: "Red Hat Display", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     min-width: 100%;
     border: none;
     outline: none;
+    @media only screen and (max-width: 26.7em) {
+      font-size: 1.7rem;
+    }
   }
 }
 
@@ -92,20 +109,4 @@
   &:hover {
     color: #2d3b60;
   }
-}
-
-.mr {
-  margin-right: 2rem;
-}
-
-.mb {
-  margin-bottom: 0.2rem;
-}
-
-.AV {
-  display: flex;
-  flex-direction: column;
-}
-.AH {
-  display: flex;
 }

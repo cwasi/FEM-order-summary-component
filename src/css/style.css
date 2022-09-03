@@ -1,13 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+.mr {
+  margin-right: 2rem; }
+
+.mb {
+  margin-bottom: 0.2rem; }
+
+.AV {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.AH {
+  display: flex; }
+
 .attribution {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 1.4rem; }
+  @media only screen and (max-width: 26.7em) {
+    .attribution {
+      font-size: 1.5rem; } }
 
 .summary {
   margin: 5rem 0;
   border-radius: 2rem;
   display: grid;
   grid-template-columns: 40rem;
-  grid-template-rows: 1fr; }
+  grid-template-rows: 1fr;
+  transition: all 100ms; }
+  @media only screen and (max-width: 26.7em) {
+    .summary {
+      grid-template-columns: 38rem; } }
   .summary__img-containe {
     width: 100%; }
   .summary__img {
@@ -30,6 +52,9 @@
     margin-bottom: 2rem;
     line-height: 2.2rem;
     text-align: center; }
+    @media only screen and (max-width: 26.7em) {
+      .summary__text {
+        line-height: 3rem; } }
   .summary__plan-container > a:hover {
     font-family: "Red Hat Display", sans-serif;
     font-weight: 700;
@@ -44,17 +69,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center; }
+  @media only screen and (max-width: 26.7em) {
+    .summary__plan-title, .summary__plan-duration {
+      font-size: 1.7rem; } }
   .summary__plan-title {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 900;
     color: #2d3b60; }
   .summary__btn {
     font-family: "Red Hat Display", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     min-width: 100%;
     border: none;
     outline: none; }
+    @media only screen and (max-width: 26.7em) {
+      .summary__btn {
+        font-size: 1.7rem; } }
 
 .btn-submit {
   margin-bottom: 2.5rem;
@@ -73,19 +103,6 @@
   .btn-cancel:hover {
     color: #2d3b60; }
 
-.mr {
-  margin-right: 2rem; }
-
-.mb {
-  margin-bottom: 0.2rem; }
-
-.AV {
-  display: flex;
-  flex-direction: column; }
-
-.AH {
-  display: flex; }
-
 *,
 *::before,
 *::after {
@@ -95,10 +112,13 @@
 
 html,
 body {
-  width: 100%; }
+  height: 100%; }
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 26.7em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Red Hat Display", sans-serif;
@@ -109,6 +129,9 @@ body {
   background-image: url(/src/img/pattern-background-desktop.svg);
   background-position: top;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 26.7em) {
+    body {
+      font-size: 1.9rem; } }
 
 main {
   display: flex;
