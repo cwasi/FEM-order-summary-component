@@ -21,7 +21,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 - Solution URL: [Source code](https://github.com/cwasi/FEM-order-summary-component)
-- Live Site URL: [Live site](https://glowing-starlight-2eaa51.netlify.app/)
+- Live Site URL: [Live site](https://cwasi-order-summary-comp.netlify.app/)
 
 ## My process
 
